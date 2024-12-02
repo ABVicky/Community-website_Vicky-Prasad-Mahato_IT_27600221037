@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>Syllabus</title>
+    <meta name="title" content="EduMakaut - The Best Program to Enroll for Exchange">
+    <meta name="description" content="This is an education html template made by codewithsadee">
+
+    <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/assets/images/logo.ico">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="syllabus.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <!-- <h1>पढ़ाकू</h1> -->
+        <img src="./assets/images/logo.png" width="120" height="40" alt="ED Logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <!-- <h1>पढ़ाकू</h1> -->
+            <img src="./assets/images/logo.png" width="162" height="50" alt="ED Web logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#u_zone" class="navbar-link resources-link" data-nav-link>
+              'U' Zone
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="meme.html" class="navbar-link" target="_blank">Memes</a></li> 
+              <li><a href="coming_soon.html" class="navbar-link" target="_blank">Blogs</a></li>
+              <li><a href="coming_soon.html" class="navbar-link" target="_blank">Creative Edits</a></li>
+              <li><a href="coming_soon.html" class="navbar-link" target="_blank">Photography</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Poetry</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="navbar-item">
+            <a href="#get-Now" class="navbar-link resources-link" data-nav-link>
+              Oppotunities
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="coming_soon.html" class="navbar-link"></a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Quiz</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Internships </a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Placements </a></li>
+            </ul>
+          </li>
+          <li class="navbar-item">
+            <a href="#get-Now" class="navbar-link resources-link" data-nav-link>
+              Resources
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="organizer.html" class="navbar-link">Organisers</a></li>
+              <li><a href="notes.html" class="navbar-link">Notes</a></li>
+              <li><a href="previous.html" class="navbar-link">PYQs</a></li>
+              <li><a href="syllabus.html" class="navbar-link">Syllabus</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item">
+            <a href="notice.html" class="navbar-link" data-nav-link>Notice</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#More" class="navbar-link resources-link" data-nav-link>
+              More
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="coming_soon.html" class="navbar-link">MAR & MOOCs</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Mentors</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Projects</a></li>
+              <li><a href="coming_soon.html" class="footer-link">About US</a></li>
+              <li><a href="coming_soon.html" class="footer-link">Contact US</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search" onclick="toggleSearch()">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+        
+        <!-- Search Box Container -->
+        <div id="search-box-overlay" class="search-overlay">
+          <div class="search-box">
+            <input type="text" placeholder="Type your search..." />
+            <button onclick="toggleSearch()">Close</button>
+          </div>
+        </div>
+        
+        <a href="coming_soon.html" class="btn has-before">
+          <span class="span">Bidu Version</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+    <main>
+        <article>
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero has-bg-image" id="home" aria-label="home"
+                style="background-image: url('./assets/images/hero-bg.svg')">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <h1 class="h1 section-title">
+                            Find the complete and updated MAKAUT syllabus for all your courses on <span class="span">पढ़ाकू</span>. 
+                        </h1>
+
+                        <p class="hero-text">
+                            Organized by semester and subject, this page ensures you stay aligned with your curriculum and focus on what matters most. Plan better, study smarter!
+                        </p>
+
+
+                    </div>
+
+                    <figure class="hero-banner">
+
+                        <div class="img-holder one" style="--width: 270; --height: 300;">
+                            <img src="./assets/images/syllabus01.png" width="270" height="300" alt="hero banner"
+                                class="img-cover">
+                        </div>
+
+                        <div class="img-holder two" style="--width: 240; --height: 370;">
+                            <img src="./assets/images/syllabus02.png" width="240" height="370" alt="hero banner"
+                                class="img-cover">
+                        </div>
+                    </figure>
+                </div>
+            </section>
+            <section class="center-content">
+                <h1>Syllabus</h1>
+
+                <div class="dropdown-container">
+                    <label for="department" class="dropdown-label">Choose your Department:</label>
+                    <select id="department" name="department" class="styled-dropdown">
+                        <option value="" disabled selected>Select Department</option>
+                        <option value="cse">Computer Science Engineering</option>
+                        <option value="cse">Information Technology</option>
+                        <option value="ece">Electronics and Communication Engineering</option>
+                        <option value="ee">Electrical Engineering</option>
+                        <option value="me">Mechanical Engineering</option>
+                        <option value="ce">Civil Engineering</option>
+                        <!-- Add more departments as needed -->
+                    </select>
+                </div>
+            </section>
+
+            <!-- Team Section (Only for CSE Department) -->
+            <!-- CSE Department, Semester 1 -->
+            <section id="cse-sem1" class="department-section" style="display: none;">
+                <div class="team-content">
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 1</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 2</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 3</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 4</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 5</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 6</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 7</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 8</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="ece-sem1" class="department-section" style="display: none;">
+                <div class="team-content">
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 1</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 2</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 3</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 4</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 5</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 6</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 7</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 8</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="ee-sem1" class="department-section" style="display: none;">
+                <div class="team-content">
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 1</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 2</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 3</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 4</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 5</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 6</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 7</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 8</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="me-sem1" class="department-section" style="display: none;">
+                <div class="team-content">
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 1</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 2</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 3</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 4</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 5</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 6</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 7</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 8</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+
+            <section id="ce-sem1" class="department-section" style="display: none;">
+                <div class="team-content">
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 1</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 2</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 3</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 4</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 5</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 6</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 7</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                    <div class="boxes">
+                        <h3>CSE</h3>
+                        <h5>Semester 8</h5>
+                        <a href="https://drive.google.com/drive/folders/1ubsvFojSBACNhufF5OVMQ-4PgjGf97ve?dmr=1&ec=wgc-drive-hero-goto"
+                            target="_blank">
+                            <button class="styled-button">Read Now</button>
+                        </a>
+                    </div>
+                </div>
+                
+            </section>
+
+            
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="common-section" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="logo">
+          </a>
+
+          <p class="footer-brand-text">
+            is your go-to resource for navigating BBIT & excelling in your MAKAUT journey. From organizers and study materials to campus updates and academic news, everything you need is here. Stay informed & empowered with <span class="span"><strong>पढ़ाकू!</strong></span> 
+          </p>
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">Kolkata</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+91" class="footer-link">+91 XXXXXXXXXX</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:padhakoo@gmail.com" class="footer-link">padhakoo@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mentors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mentors Profile</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Download Guide</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Sign In/Registration</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contact</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <!-- <input type="email" name="email_address" placeholder="Your email" required class="input-field"> -->
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2024 All Rights Reserved by <a href="#" class="copyright-link">पढ़ाकू</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="syllabus.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

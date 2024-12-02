@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <!-- <title>पढ़ाकू</title> -->
+  <meta name="title" content="Engineer Dost">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/assets/images/logo.ico">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+
+  <style>
+    /* General Reset */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #1d1d1d;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png');
+        background-size: 100px 100px;
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    .contai {
+        text-align: center;
+        padding: 50px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(15px);
+        width: 100%;
+        max-width: 600px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #f5f5f5;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #ddd;
+        margin-bottom: 50px;
+    }
+
+
+</style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <!-- <h1>पढ़ाकू</h1> -->
+        <img src="./assets/images/logo.png" width="120" height="40" alt="ED Logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <!-- <h1>पढ़ाकू</h1> -->
+            <img src="./assets/images/logo.png" width="162" height="50" alt="ED Web logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#u_zone" class="navbar-link resources-link" data-nav-link>
+              'U' Zone
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="meme.html" class="navbar-link" target="_blank">Memes</a></li> 
+              <li><a href="coming_soon.html" class="navbar-link" target="_blank">Blogs</a></li>
+              <li><a href="coming_soon.html" class="navbar-link" target="_blank">Creative Edits</a></li>
+              <li><a href="coming_soon.html" class="navbar-link" target="_blank">Photography</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Poetry</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="navbar-item">
+            <a href="#get-Now" class="navbar-link resources-link" data-nav-link>
+              Oppotunities
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="coming_soon.html" class="navbar-link"></a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Quiz</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Internships </a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Placements </a></li>
+            </ul>
+          </li>
+          
+          
+          <li class="navbar-item">
+            <a href="#get-Now" class="navbar-link resources-link" data-nav-link>
+              Resources
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="organizer.html" class="navbar-link">Organisers</a></li>
+              <li><a href="notes.html" class="navbar-link">Notes</a></li>
+              <li><a href="previous.html" class="navbar-link">PYQs</a></li>
+              <li><a href="syllabus.html" class="navbar-link">Syllabus</a></li>
+            </ul>
+          </li>
+
+          <li class="navbar-item">
+            <a href="notice.html" class="navbar-link" data-nav-link>Notice</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#More" class="navbar-link resources-link" data-nav-link>
+              More
+              <span class="material-icons dropdown-icon"></span>
+            </a>
+            <ul class="dropdown">
+              <li><a href="coming_soon.html" class="navbar-link">MAR & MOOCs</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Mentors</a></li>
+              <li><a href="coming_soon.html" class="navbar-link">Projects</a></li>
+              <li><a href="coming_soon.html" class="footer-link">About US</a></li>
+              <li><a href="coming_soon.html" class="footer-link">Contact US</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search" onclick="toggleSearch()">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+        
+        <!-- Search Box Container -->
+        <div id="search-box-overlay" class="search-overlay">
+          <div class="search-box">
+            <input type="text" placeholder="Type your search..." />
+            <button onclick="toggleSearch()">Close</button>
+          </div>
+        </div>
+        
+        <a href="coming_soon.html" class="btn has-before">
+          <span class="span">Bidu Version</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+        <div class="background"></div>
+
+    <div class="contai">
+        <div class="heading">Coming Soon</div>
+        <div class="subheading">Exciting things are on the way. <br>Wait for some time!</div>
+             
+    </div>
+    </article>
+  </main>
+
+
+
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
