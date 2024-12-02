@@ -6,6 +6,8 @@ Here’s the simplified version without `#` and extra `**`:
 
 पढ़ाकू 📚  
 Simplify Learning, Empower Engineering Students  
+Reach the site here: https://padhakoo.netlify.app/
+
 
 पढ़ाकू is a dedicated platform designed to provide engineering students with essential resources to streamline their academic journey. Whether you need organizers, previous year questions (PYQs), notes, or real-time updates, पढ़ाकू has you covered!  
 
