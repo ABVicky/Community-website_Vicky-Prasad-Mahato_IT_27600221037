@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Center the form on the page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f7fc;
+        }
+
+        /* Styling the form */
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Title */
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Upload Button Styling */
+        .upload-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .upload-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* File input hidden */
+        .file-input {
+            display: none;
+        }
+
+        /* File info and preview container */
+        .file-info {
+            margin-top: 20px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .file-info p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .file-name {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .file-size {
+            font-size: 13px;
+            color: #888;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Upload Your File</h2>
+        <form action="/api/v1/upload" method="POST" enctype="multipart/form-data">
+            <!-- Custom Upload Button -->
+            <label for="fileUpload" class="upload-btn">
+                Choose File
+                <input type="file" name="file" id="fileUpload" class="file-input" accept="*/*" onchange="displayFileInfo(event)" />
+            </label>
+
+            <!-- File Information -->
+            <div class="file-info" id="fileInfo">
+                <!-- File details will be displayed here after selection -->
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn" disabled id="submitBtn">Upload</button>
+        </form>
+    </div>
+
+    <script>
+        // Function to display file info and enable submit button
+        function displayFileInfo(event) {
+            const file = event.target.files[0];
+            const fileInfoDiv = document.getElementById('fileInfo');
+            const submitBtn = document.getElementById('submitBtn');
+
+            if (file) {
+                const fileName = file.name;
+                const fileSize = (file.size / 1024).toFixed(2) + ' KB'; // Convert size to KB
+                const fileType = file.type;
+
+                // Display file info
+                fileInfoDiv.innerHTML = `
+                    <p class="file-name">File Name: ${fileName}</p>
+                    <p class="file-size">Size: ${fileSize}</p>
+                    <p>Type: ${fileType}</p>
+                `;
+
+                // Enable the submit button
+                submitBtn.disabled = false;
+            } else {
+                fileInfoDiv.innerHTML = '';
+                submitBtn.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>
