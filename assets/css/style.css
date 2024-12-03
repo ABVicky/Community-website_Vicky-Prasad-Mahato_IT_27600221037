@@ -1,16 +1,6 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
 :root {
 
-  /**
-   * colors
-   */
-
-
-  
-  
     --selective-yellow: hsl(42, 94%, 55%);
     --eerie-black-1: hsl(0, 0%, 10%);
     --eerie-black-2: hsl(0, 0%, 7%);
@@ -28,24 +18,10 @@
     --black_30: hsla(0, 0%, 0%, 0.3);
     --kappel: hsl(244, 50%, 40%);
     --white: hsl(0, 0%, 100%);
-    /* --gradient: linear-gradient(-90deg, hsl(244, 50%, 40%) 0%, hsl(42, 94%, 55%) 100%); */
+
  
-  
-  
-  
-  /**
-   * Gradient color
-   */
   --gradient: linear-gradient(-90deg, hsl(146, 55%, 36%) 0%, hsl(244, 45%, 60%) 100%);
   
-
-
-  /**
-   * gradient color
-   */
-
-  /* --gradient: linear-gradient(-90deg, hsl(151, 58%, 46%) 0%, hsl(170, 75%, 41%) 100%); */
-
   /**
    * typography
    */
