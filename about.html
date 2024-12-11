@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>पढ़ाकू || Padhakoo</title>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            font-family: var(--ff-poppins);
+            background-color: var(--light-gray);
+            color: var(--eerie-black-1);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--section-padding);
+        }
+
+        h1 {
+            font-family: var(--ff-league_spartan);
+            font-size: var(--fs-1);
+            color: var(--kappel);
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px var(--black_30);
+        }
+
+        h2 {
+            font-size: var(--fs-2);
+            color: var(--selective-yellow);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--kappel);
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: var(--fs-5);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .about-section {
+            background: var(--white);
+            border-radius: var(--radius-10);
+            box-shadow: var(--shadow-2);
+            padding: 40px;
+            margin-bottom: 30px;
+            transition: var(--transition-2);
+        }
+
+        .about-section:hover {
+            box-shadow: var(--shadow-3);
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            background: var(--white);
+            border-radius: var(--radius-10);
+            padding: 20px;
+            margin: 10px;
+            box-shadow: var(--shadow-1);
+            transition: var(--transition-1);
+            text-align: center;
+            flex: 1 1 30%;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--kappel);
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-3);
+        }
+
+        .team-member img {
+            border-radius: var(--radius-circle);
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid var(--kappel);
+            transition: var(--transition-1);
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .team-member h3 {
+            font-size: var(--fs-4);
+            color: var(--kappel);
+            margin: 10px 0;
+            font-weight: var(--fw-600);
+        }
+
+        .team-member p {
+            font-size: var(--fs-5);
+            color: var(--gray-web);
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--gray-web);
+            color: var(--white);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+            box-shadow: var(--shadow-2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Our Community 'पढ़ाकू'</h1>
+        <div class="about-section">
+            <h2>Mission of पढ़ाकू</h2>
+            <p>To empower engineering students, particularly at BBIT, by providing a comprehensive platform that delivers high-quality resources, tools, and guidance. पढ़ाकू aims to simplify academic journeys, foster knowledge-sharing, and enable students to excel in their studies through curated notes, previous year questions, and timely updates about college life and academics.</p>
+            <h2>Vision of पढ़ाकू</h2>
+            <p>To become the go-to digital companion for engineering students, fostering a culture of academic excellence and collaboration. पढ़ाकू envisions a future where students have seamless access to resources and information, bridging the gap between traditional learning methods and modern educational needs. It strives to inspire innovation, critical thinking, and a passion for learning among its users.</p>
+        </div>
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="./assets/images/Potraits/Vicky.png" alt="Vicky">
+                <h3>Vicky Prasad Mahato</h3>
+                <p>Community Leader || Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="./assets/images/Potraits/Rohit.jpg" alt="Rohit">
+                <h3>Rohit Kumar</h3>
+                <p>Community Manager</p>
+            </div>
+            
+        </div>
+    </div>
+    <footer class="footer" id="common-section" style="background-image: url('./assets/images/footer-bg.png')">
+
+        <div class="footer-top section">
+          <div class="container grid-list">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="162" height="50" alt="logo">
+              </a>
+    
+              <p class="footer-brand-text">
+                is your ultimate guide to navigating BBIT and excelling in your MAKAUT journey. From study resources to campus updates, everything you need is here. Stay informed and empowered by <span class="span"><strong>पढ़ाकू!</strong></span> 
+              </p>
+    
+              <div class="wrapper">
+                <span class="span">Add:</span>
+    
+                <address class="address">Kolkata</address>
+              </div>
+    
+              <!-- <div class="wrapper">
+                <span class="span">Call:</span>
+    
+                <a href="tel:+916291252407" class="footer-link">+91 62912 52407</a>
+              </div> -->
+    
+              <div class="wrapper">
+                <span class="span">Email:</span>
+    
+                <a href="mailto:abvicky01@gmail.com" class="footer-link">abvicky01@gmail.com</a>
+              </div>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Online Platform</p>
+              </li>
+    
+              <li>
+                <a href="about.html" class="footer-link">About</a>
+              </li>
+    
+              <!-- <li>
+                <a href="#" class="footer-link">Courses</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Mentors</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Events</a>
+              </li> -->
+    
+              <li>
+                <a href="#" class="footer-link">Mentors Profile</a>
+              </li>
+    
+              <li>
+                <a href="" class="footer-link">Download Guide</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Links</p>
+              </li>
+    
+              <li>
+                <a href="https://abvicky.site" class="footer-link">Contact Us</a>
+              </li>
+    
+              <li>
+                <a href="coming_soon.html" class="footer-link">Gallery</a>
+              </li>
+    
+              <li>
+                <a href="notice.html" class="footer-link">Notice</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">FAQ's</a>
+              </li>
+    
+    <!--           <li>
+                <a href="#" class="footer-link">Sign In/Registration</a>
+              </li> -->
+    
+            </ul>
+    
+            <div class="footer-list">
+    
+              <p class="footer-list-title">Contact</p>
+    
+              <p class="footer-list-text">
+                Join our team and help us building a much better community for all.
+              </p>
+    
+              <form action="" class="newsletter-form">
+                <!-- <input type="email" name="email_address" placeholder="Your email" required class="input-field"> -->
+    
+                <button type="button" class="btn has-before" onclick="window.location.href='https://forms.office.com/r/TF4npXcGMt';">
+                  <span class="span">Join as Contributor</span>
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+    
+              <ul class="social-list">
+    
+                <!-- <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li> -->
+    
+                <li>
+                  <a href="https://www.linkedin.com/in/abvicky/" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+    
+                <!-- <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li> -->
+    
+                <!-- <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li> -->
+    
+                <!-- <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li> -->
+    
+              </ul>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              Copyright 2024 All Rights Reserved by <a href="#" class="copyright-link">पढ़ाकू</a>
+            </p>
+    
+          </div>
+        </div>
+    
+      </footer>
+    
+      <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+      </a>
+    
+      <!-- Chat Bot -->
+      <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+      <script src="https://files.bpcontent.cloud/2024/12/03/05/20241203050415-IHFJQPXQ.js"></script>
+</body>
+</html>
